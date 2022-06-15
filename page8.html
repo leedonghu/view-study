@@ -1,0 +1,116 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+    :root{
+        /*color */
+        --white-color: #fff;
+        --black-color: #140a00;
+		--blue-color: #045fd4;
+		--red-color: #ff0000;
+		--gray-dark-color: #909090;
+		--grey-light-color: #e0e0e0;
+        --pupple-color: #ec0e97;
+        --green-color: #0bf31e;
+    }
+
+    .item{
+        width: 80px;
+        height: 80px;
+        margin-bottom: 20px;
+    }
+
+    .container1{
+        width: 100%;
+        background-color: yellow;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .item1{
+        background: var(--red-color);
+    }
+
+    .item2{
+        background: var(--blue-color);
+    }
+
+    .item3{
+        background: var(--green-color);
+    }
+
+    .item4{
+        background: var(--black-color);
+    }
+
+    .item5{
+        background-color: var(--gray-dark-color);
+    }
+
+    .box{
+        width: 80px;
+        height: 80px;
+        
+        margin-bottom: 20px;
+    }
+
+    .container2{
+        width: 100%;
+        position: relative;
+    }
+
+    .box1{
+        background: var(--red-color);
+        left: 50px;
+        top: 20px;
+        position: absolute; /* 가장 가까운 박스 기준으로*/
+    }
+
+    .box2{
+        background: var(--blue-color);
+        left: 20px;
+        top: 20px;
+        position: fixed; /* 페이지 상에서 이동 */
+    }
+
+    .box3{
+        background: var(--green-color);
+        position: sticky;
+        left: 30px;
+        top: 50px;
+    }
+
+    .box4{
+        background: var(--black-color);
+        display: inline-flexbox;
+    }
+
+    .box5{
+        background-color: var(--gray-dark-color);
+        position: relative; /* 원래 있어야 하는 자리에서*/
+        left: 50px;
+        top: 50px;
+    }
+</style>
+<script src="http://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<title>page8</title>
+</head>
+<body>
+<div class="container1">
+    <div class="item item1"></div>
+    <div class="item item2"></div>
+    <div class="item item3"></div>
+    <div class="item item4"></div>
+    <div class="item item5"></div>
+</div>
+
+<div class="container2">
+    <div class="box box1"></div>
+    <div class="box box2"></div>
+    <div class="box box3"></div>
+    <div class="box box4"></div>
+    <div class="box box5"></div>
+</div>
+</body>
+</html>
