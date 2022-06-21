@@ -1,0 +1,96 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+    :root{
+        /*color */
+        --white-color: #fff;
+        --black-color: #140a00;
+		--blue-color: #045fd4;
+		--red-color: #ff0000;
+		--gray-dark-color: #909090;
+		--grey-light-color: #e0e0e0;
+        --pupple-color: #ec0e97;
+        --green-color: #0bf31e;
+    }
+
+    .{
+        margin: 0;
+        padding: 0;
+    }
+
+    .calc{
+        display: flex;
+        flex-direction: column;
+        margin-top: 250px;
+        align-items: center;
+        
+    }
+
+    .result{
+        border: 1px solid black;
+        width: 360px;
+        height: 50px;
+    }
+
+    .first, .second, .third, .fourth{
+        margin-top: 10px;
+    }
+
+    span{
+        display: inline-block;
+        width: 85px;
+        height: 35px;
+        text-align: center;
+        border: 0.5px solid black;
+        background-color:var(--grey-light-color) ;
+
+    }
+
+    span#divide, span#mult, span#sub, span#plus{
+        background-color: var(--gray-dark-color);
+    }
+
+    span#eq{
+        background-color: var(--blue-color);
+    }
+    
+    
+</style>
+<title>Insert title here</title>
+</head>
+<body>
+    <div class="calc">
+        <div class="result">
+        
+        </div>
+        <div class="first">
+            <span id="n7">7</span>
+            <span id="n8">8</span>
+            <span id="n9">9</span>
+            <span id="divide">÷</span>
+        </div>
+        <div class="second">
+            <span id="n4">4</span>
+            <span id="n5">5</span>
+            <span id="n6">6</span>
+            <span id="mult">*</span>
+        </div>
+        <div class="third">
+            <span id="n1">1</span>
+            <span id="n2">2</span>
+            <span id="n3">3</span>
+            <span id="sub">-</span>
+        </div>
+        <div class="fourth">
+            <span id="n0">0</span>
+            <span id="com">.</span>
+            <span id="eq">=</span>
+            <span id="plus">+</span>
+        </div>
+    </div>
+
+</body>
+
+</html>
